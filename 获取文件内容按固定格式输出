@@ -1,0 +1,6 @@
+names = [n.strip() for n in open("names.txt").read().split(",")]
+ids = [i.strip() for i in open("studentid.txt").read().split(",")]
+
+print "Student_Name\t| Student_ID"
+for n, i in zip(names, ids):
+    print "{}\t| {}".format(n, i)
